@@ -1,4 +1,4 @@
-package Item;
+package itemcf.movielens;
 
 public class RecommendationItem implements Comparable<RecommendationItem>{
      private int itemid ;

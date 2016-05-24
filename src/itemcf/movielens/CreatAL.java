@@ -1,4 +1,4 @@
-package Item;
+package itemcf.movielens;
 
 import java.io.BufferedReader;
 import java.io.File;
