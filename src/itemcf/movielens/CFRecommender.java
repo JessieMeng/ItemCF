@@ -14,11 +14,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class CreatAL {
+public class CFRecommender {
 
 	public static void main(String[] args) throws Exception {
 		// »ñµÃHashMap
-		CreatAL ca = new CreatAL();
+		CFRecommender ca = new CFRecommender();
 		File file = new File("u1.base");
 		Map<Integer, List<Integer>> datamap = null;
 		try {
