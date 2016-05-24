@@ -1,6 +1,6 @@
 package Item;
 
-public class RecommendationItem implements Comparable{
+public class RecommendationItem implements Comparable<RecommendationItem>{
      private int itemid ;
      private double itemscore;
      public RecommendationItem(int itemid,double itemscore){
@@ -20,20 +20,18 @@ public class RecommendationItem implements Comparable{
 		this.itemscore = itemscore;
 	}
 
+    public String toString(){
+    	return  this.itemid+" @ "+this.itemscore;
+    }
 	@Override
-	public int compareTo(Object o) {
-		RecommendationItem r = (RecommendationItem)o;
-		if(this.itemscore > r.itemscore)
+	public int compareTo(RecommendationItem o) {
+		if(this.itemscore > o.itemscore)
 			return -1;
-		else if(this.itemscore < r.itemscore)
+		else if(this.itemscore < o.itemscore)
 			return 1;
 		else 
 			return 0;
 	}
-    
-    public String toString(){
-    	return  this.itemid+" @ "+this.itemscore;
-    }
      
      
 }
